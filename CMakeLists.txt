@@ -192,9 +192,9 @@ SET(s2wasm_SOURCES
   src/wasm-emscripten.cpp
   src/wasm-linker.cpp
 )
-ADD_EXECUTABLE(eosio-s2wasm
+ADD_EXECUTABLE(enumivo-s2wasm
                ${s2wasm_SOURCES})
-TARGET_LINK_LIBRARIES(eosio-s2wasm passes wasm asmjs ast cfg support)
-SET_PROPERTY(TARGET eosio-s2wasm PROPERTY CXX_STANDARD 11)
-SET_PROPERTY(TARGET eosio-s2wasm PROPERTY CXX_STANDARD_REQUIRED ON)
-INSTALL(TARGETS eosio-s2wasm DESTINATION ${CMAKE_INSTALL_BINDIR})
+TARGET_LINK_LIBRARIES(enumivo-s2wasm passes wasm asmjs ast cfg support)
+SET_PROPERTY(TARGET enumivo-s2wasm PROPERTY CXX_STANDARD 11)
+SET_PROPERTY(TARGET enumivo-s2wasm PROPERTY CXX_STANDARD_REQUIRED ON)
+INSTALL(TARGETS enumivo-s2wasm DESTINATION ${CMAKE_INSTALL_BINDIR})
